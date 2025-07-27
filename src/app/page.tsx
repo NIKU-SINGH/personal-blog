@@ -129,7 +129,7 @@ export default async function Home() {
   const recentBlogs = blogs.slice(-5).reverse();
 
   return (
-    <div className="flex flex-col py-10 min-h-screen px-4 bg-white text-gray-900 text-sm">
+    <div className="flex flex-col py-10 px-4 bg-white text-gray-900 text-sm max-w-2xl mx-auto">
       <div className="max-w-2xl w-full">
         <h1 className="text-2xl font-semibold mb-1">{homeData.name}</h1>
         <div className="text-sm text-gray-500 mb-6">

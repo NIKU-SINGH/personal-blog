@@ -3,16 +3,18 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import React from "react";
-import ReactMarkdown from "react-markdown";
+import MarkdownWithIds from "@/components/MarkdownWithIds";
+import TableOfContents from "@/components/TableOfContents";
+import { extractHeadings } from "@/utils/extractHeadings";
 
 interface BlogPageProps {
-  params: { year: string; slug: string };
+  params: Promise<{ year: string; slug: string }>;
 }
 
 export default async function BlogPage({
   params,
 }: BlogPageProps): Promise<React.JSX.Element> {
-  const { year, slug } = params;
+  const { year, slug } = await params;
   const filePath = path.join(
     process.cwd(),
     "src/app/posts",
@@ -26,7 +28,7 @@ export default async function BlogPage({
     const parsed = matter(file);
     content = parsed.content;
     data = parsed.data;
-  } catch (e) {
+  } catch {
     return notFound();
   }
 
@@ -39,39 +41,39 @@ export default async function BlogPage({
     });
   };
 
+  const headings = extractHeadings(content);
+
   return (
-    <main>
-      <div
-        style={{
-          padding: "4rem 0rem 0rem 0rem",
-        }}
-      >
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h1
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "500",
-            }}
-          >
+    <main className="min-h-screen">
+      <div className="pt-10">
+        <div className="max-w-2xl mx-auto px-4">
+          {/* <h1 className="text-3xl font-semibold text-gray-900 mb-2">
             {data.title as string}
           </h1>
-          <div
-            style={{
-              color: "#a0a0a0",
-              fontSize: "14px",
-              fontWeight: "400",
-            }}
-          >
+
+          <div className="text-gray-600 text-sm mb-8">
+            {formatDate(data.date as string)} •{" "}
+            {(data.author as string) || "Anonymous"}
+          </div> */}
+          <h1 className="text-2xl font-semibold mb-1">
+            {data.title as string}
+          </h1>
+          <div className="text-sm text-gray-500 mb-6">
             {formatDate(data.date as string)} •{" "}
             {(data.author as string) || "Anonymous"}
           </div>
         </div>
       </div>
 
-      <div style={{ fontSize: "14px" }}>
-        <article className="prose">
-          <ReactMarkdown>{content as string}</ReactMarkdown>
-        </article>
+      <div className="relative">
+        <div className="max-w-2xl mx-auto px-4 pb-24">
+          <article className="prose prose-lg text-sm">
+            <MarkdownWithIds>{content as string}</MarkdownWithIds>
+          </article>
+        </div>
+        <div className="fixed right-24 top-10">
+          <TableOfContents headings={headings} />
+        </div>
       </div>
     </main>
   );
