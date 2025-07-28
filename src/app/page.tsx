@@ -136,9 +136,9 @@ export default async function Home() {
                   ))}
                 {item.after}
                 {item.moreLinks &&
-                  item.moreLinks.map((link, i) => (
+                  item.moreLinks.map((link) => (
                     <span key={link.href}>
-                      {i > 0 && ", "}
+                      {item.moreLinks.indexOf(link) > 0 && ", "}
                       <Link
                         href={link.href}
                         target="_blank"

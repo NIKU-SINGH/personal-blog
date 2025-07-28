@@ -122,9 +122,9 @@ export default function WorkExperience() {
 
         <div className="mt-8 pt-6 border-t border-gray-200">
           <p className="text-gray-600">
-            I'm always open to new opportunities and interesting challenges.
-            Feel free to reach out if you'd like to discuss potential
-            collaborations or opportunities.
+            I&apos;m always open to new opportunities and interesting
+            challenges. Feel free to reach out if you&apos;d like to discuss
+            potential collaborations or opportunities.
           </p>
         </div>
       </div>

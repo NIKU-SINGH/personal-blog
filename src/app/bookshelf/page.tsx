@@ -101,7 +101,7 @@ export default function Bookshelf() {
 
         <div className="mt-8 pt-6 border-t border-gray-200">
           <p className="text-gray-600">
-            I'm always looking for new books to read. If you have any
+            I&apos;m always looking for new books to read. If you have any
             recommendations related to software development, system design, or
             technology in general, feel free to reach out!
           </p>

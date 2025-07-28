@@ -8,8 +8,8 @@ export default function About() {
           <section>
             <h2 className="text-lg font-medium mb-3">Background</h2>
             <p className="mb-4">
-              I'm a full-stack developer based in India with a strong focus on
-              data-intensive systems, scalable web apps, and real-time
+              I&apos;m a full-stack developer based in India with a strong focus
+              on data-intensive systems, scalable web apps, and real-time
               interfaces. I have a strong product sense and enjoy building
               solutions that solve real-world problems.
             </p>
@@ -50,15 +50,15 @@ export default function About() {
           <section>
             <h2 className="text-lg font-medium mb-3">Current Focus</h2>
             <p className="mb-4">
-              These days I'm deeply interested in LLMs and building products
-              around them. I'm exploring how AI can enhance developer
-              productivity and create better user experiences.
+              These days I&apos;m deeply interested in LLMs and building
+              products around them. I&apos;m exploring how AI can enhance
+              developer productivity and create better user experiences.
             </p>
             <p className="mb-4">
-              I'm also passionate about open source contributions and believe in
-              giving back to the developer community. My recent focus has been
-              on building developer tools and data systems that can scale
-              effectively.
+              I&apos;m also passionate about open source contributions and
+              believe in giving back to the developer community. My recent focus
+              has been on building developer tools and data systems that can
+              scale effectively.
             </p>
           </section>
 
@@ -71,8 +71,9 @@ export default function About() {
               learnings through blog posts and open source contributions.
             </p>
             <p>
-              I'm always open to interesting conversations about technology,
-              product development, and the future of software engineering.
+              I&apos;m always open to interesting conversations about
+              technology, product development, and the future of software
+              engineering.
             </p>
           </section>
         </div>

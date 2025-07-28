@@ -122,7 +122,7 @@ export default function Papershelf() {
             I regularly read research papers to stay updated with the latest
             developments in technology. If you have any interesting papers to
             recommend, especially in the areas of AI, distributed systems, or
-            web development, I'd love to hear about them!
+            web development, I&apos;d love to hear about them!
           </p>
         </div>
       </div>
