@@ -46,7 +46,7 @@ export default async function BlogPage({
   return (
     <main className="min-h-screen">
       <div className="pt-10">
-        <div className="max-w-2xl mx-auto px-4">
+        <div className="max-w-xl mx-auto px-4">
           {/* <h1 className="text-3xl font-semibold text-gray-900 mb-2">
             {data.title as string}
           </h1>
@@ -66,7 +66,7 @@ export default async function BlogPage({
       </div>
 
       <div className="relative">
-        <div className="max-w-2xl mx-auto px-4 pb-24">
+        <div className="max-w-xl mx-auto px-4 pb-24">
           <article className="prose prose-lg text-sm">
             <MarkdownWithIds>{content as string}</MarkdownWithIds>
           </article>

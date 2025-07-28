@@ -26,7 +26,7 @@ export default async function BlogsPage() {
         padding: "1rem",
         fontSize: "14px",
       }}
-      className="max-w-2xl mx-auto"
+      className="max-w-xl mx-auto"
     >
       <h1 className="text-2xl font-semibold mb-8">All Blogs</h1>
 

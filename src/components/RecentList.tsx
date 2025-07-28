@@ -32,7 +32,7 @@ export default function RecentList({
   }
 
   return (
-    <section className="mt-12 max-w-2xl w-full">
+    <section className="mt-12 max-w-xl w-full">
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
       <ul className={archiveHref ? "mb-2" : undefined}>
         {items.map((item, idx) => {
