@@ -1,6 +1,8 @@
 import Link from "next/link";
 import RecentList from "../components/RecentList";
 import { getAllBlogs } from "../utils/readBlogs";
+import Image from "next/image";
+import Clock from "../components/Clock";
 
 const homeData = {
   name: "Niku Singh",
@@ -108,9 +110,32 @@ export default async function Home() {
   return (
     <div className="flex flex-col py-10 px-4 bg-white text-sm max-w-xl mx-auto">
       <div className="max-w-xl w-full">
-        <h1 className="text-2xl font-semibold mb-1 text-gray-900">{homeData.name}</h1>
-        <div className="text-sm text-gray-500 mb-6">
-          Updated {homeData.updated}
+        {/* Profile Section Added/Modified */}
+        <div className="flex flex-col items-center gap-6 mb-12">
+          {/* Rectangular Image with Fade and Larger Size */}
+          <div className="relative w-64 h-64 overflow-hidden">
+            <Image
+              src="/images/Portfolio.png"
+              alt="Niku Singh"
+              fill
+              className="object-cover scale-125 object-top"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-transparent z-10" />
+          </div>
+
+          <div className="text-center space-y-2">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900">
+              {homeData.name}
+            </h1>
+            <div className="flex items-center justify-center gap-3 text-xs font-mono text-gray-400">
+              <span>/ni:ku: sɪŋ/ • noun</span>
+              <span>•</span>
+              <Clock />
+              {/* <span>•</span> */}
+              {/* <span>LOFI <span className="text-[10px]">🎵</span></span> */}
+            </div>
+          </div>
         </div>
         {homeData.intro.map((item, idx) => {
           if (typeof item === "string") {
