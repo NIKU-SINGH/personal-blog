@@ -68,18 +68,17 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
             />
           </svg>
         </button>
-        <div className="text-sm font-medium text-gray-900">Index</div>
+        <div className="text-sm font-medium ">Index</div>
       </div>
       <ul className="space-y-1">
         {headings.map((heading) => (
           <li key={heading.id}>
             <button
               onClick={() => scrollToHeading(heading.id)}
-              className={`text-left w-full text-sm transition-all duration-200 hover:text-gray-900 relative ${
-                activeId === heading.id
-                  ? "text-gray-900 font-medium bg-gray-50 border-l-2 border-gray-400 pl-3"
+              className={`text-left w-full text-sm transition-all duration-200 hover: relative ${activeId === heading.id
+                  ? " font-medium bg-gray-50 border-l-2 border-gray-400 pl-3"
                   : "text-gray-600 hover:bg-gray-50 pl-3"
-              }`}
+                }`}
               style={{
                 paddingLeft: `${(heading.level - 1) * 12 + 12}px`,
               }}

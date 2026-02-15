@@ -1,12 +1,44 @@
+import Image from "next/image";
+import Clock from "@/components/Clock";
+
 export default function About() {
   return (
-    <div className="flex flex-col py-10 px-4 bg-white text-gray-900 text-sm max-w-xl mx-auto">
+    <div className="flex flex-col py-10 px-4 bg-white text-gray-500 text-sm max-w-xl mx-auto">
       <div className="max-w-xl w-full">
-        <h1 className="text-2xl font-semibold mb-6">About Me</h1>
+        <h1 className="text-2xl font-semibold mb-6 text-gray-900">About Me</h1>
 
+        {/* Profile Section Added/Modified */}
+        <div className="flex flex-col items-center gap-6 mb-12">
+          {/* Rectangular Image with Fade and Larger Size */}
+          <div className="relative w-64 h-64 overflow-hidden">
+            <Image
+              src="/images/Portfolio.png"
+              alt="Niku Singh"
+              fill
+              className="object-cover scale-125 object-top"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-transparent z-10" />
+          </div>
+
+          <div className="text-center space-y-2">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900">
+              Niku Singh
+            </h1>
+            <div className="flex items-center justify-center gap-3 text-xs font-mono text-gray-400">
+              <span>/ni:ku: sɪŋ/ • noun</span>
+              <span>•</span>
+              <Clock />
+              {/* <span>•</span> */}
+              {/* <span>LOFI <span className="text-[10px]">🎵</span></span> */}
+            </div>
+          </div>
+        </div>
+
+        {/* Rest of the content */}
         <div className="space-y-6">
           <section>
-            <h2 className="text-lg font-medium mb-3">Background</h2>
+            <h2 className="text-lg font-medium mb-3 text-gray-900">Background</h2>
             <p className="mb-4">
               I&apos;m a full-stack developer based in India with a strong focus
               on data-intensive systems, scalable web apps, and real-time
@@ -22,10 +54,10 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium mb-3">Technical Skills</h2>
+            <h2 className="text-lg font-medium mb-3 text-gray-900">Technical Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h3 className="font-medium mb-2">Frontend</h3>
+                <h3 className="font-medium mb-2 text-gray-900">Frontend</h3>
                 <ul className="space-y-1 text-sm">
                   <li>• React & Next.js</li>
                   <li>• TypeScript</li>
@@ -35,7 +67,7 @@ export default function About() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-medium mb-2">Backend & Tools</h3>
+                <h3 className="font-medium mb-2 text-gray-900">Backend & Tools</h3>
                 <ul className="space-y-1 text-sm">
                   <li>• Node.js</li>
                   <li>• Python (FastAPI)</li>
@@ -48,7 +80,7 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium mb-3">Current Focus</h2>
+            <h2 className="text-lg font-medium mb-3 text-gray-900">Current Focus</h2>
             <p className="mb-4">
               These days I&apos;m deeply interested in LLMs and building
               products around them. I&apos;m exploring how AI can enhance
@@ -63,7 +95,7 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-lg font-medium mb-3">Interests</h2>
+            <h2 className="text-lg font-medium mb-3 text-gray-900">Interests</h2>
             <p className="mb-4">
               Outside of coding, I enjoy reading technical books and research
               papers to stay updated with the latest developments in technology.

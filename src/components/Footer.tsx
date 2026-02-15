@@ -9,12 +9,12 @@ export default function Footer() {
           <Link
             href="https://github.com/NIKU-SINGH"
             target="_blank"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline hover:text-black"
           >
             Niku Singh
           </Link>
           {" • "}
-          <span>© 2025 All rights reserved</span>
+          <span>© 2026 All rights reserved</span>
         </p>
       </div>
     </footer>

@@ -106,9 +106,9 @@ export default async function Home() {
   const recentBlogs = blogs.slice(-5).reverse();
 
   return (
-    <div className="flex flex-col py-10 px-4 bg-white text-gray-900 text-sm max-w-xl mx-auto">
+    <div className="flex flex-col py-10 px-4 bg-white text-sm max-w-xl mx-auto">
       <div className="max-w-xl w-full">
-        <h1 className="text-2xl font-semibold mb-1">{homeData.name}</h1>
+        <h1 className="text-2xl font-semibold mb-1 text-gray-900">{homeData.name}</h1>
         <div className="text-sm text-gray-500 mb-6">
           Updated {homeData.updated}
         </div>
@@ -129,7 +129,7 @@ export default async function Home() {
                       key={link.href}
                       href={link.href}
                       target="_blank"
-                      className="text-blue-600 underline hover:text-blue-800"
+                      className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
                     >
                       {link.label}
                     </Link>
@@ -142,7 +142,7 @@ export default async function Home() {
                       <Link
                         href={link.href}
                         target="_blank"
-                        className="text-blue-600 underline hover:text-blue-800"
+                        className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
                       >
                         {link.label}
                       </Link>
@@ -158,14 +158,14 @@ export default async function Home() {
           <Link
             href={homeData.contact.twitter.href}
             target="_blank"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             {homeData.contact.twitter.label}
           </Link>{" "}
           or reach out via{" "}
           <a
             href={homeData.contact.email.href}
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             {homeData.contact.email.label}
           </a>
@@ -175,35 +175,35 @@ export default async function Home() {
           Read more about me:{" "}
           <Link
             href="/about"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             About
           </Link>
           ,{" "}
           <Link
             href="/projects"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             Projects
           </Link>
           ,{" "}
           <Link
             href="/work-experience"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             Work Experience
           </Link>
           ,{" "}
           <Link
             href="/bookshelf"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             Book Shelf
           </Link>
           ,{" "}
           <Link
             href="/papershelf"
-            className="text-blue-600 underline hover:text-blue-800"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
           >
             Paper Shelf
           </Link>

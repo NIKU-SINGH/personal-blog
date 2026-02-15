@@ -74,7 +74,10 @@ export default async function BlogsPage() {
                       {blog.date}
                     </div>
                     <h3 style={{ margin: 0 }}>
-                      <Link href={`/posts/${blog.year}/${blog.slug}`}>
+                      <Link
+                        href={`/posts/${blog.year}/${blog.slug}`}
+                        className="text-gray-500 hover:text-black hover:underline"
+                      >
                         {blog.title}
                       </Link>
                     </h3>

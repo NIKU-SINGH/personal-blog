@@ -47,7 +47,7 @@ export default async function BlogPage({
     <main className="min-h-screen">
       <div className="pt-10">
         <div className="max-w-xl mx-auto px-4">
-          {/* <h1 className="text-3xl font-semibold text-gray-900 mb-2">
+          {/* <h1 className="text-3xl font-semibold  mb-2">
             {data.title as string}
           </h1>
 

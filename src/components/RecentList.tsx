@@ -33,7 +33,7 @@ export default function RecentList({
 
   return (
     <section className="mt-12 max-w-xl w-full">
-      <h2 className="text-xl font-semibold mb-4">{title}</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-900">{title}</h2>
       <ul className={archiveHref ? "mb-2" : undefined}>
         {items.map((item, idx) => {
           // Prefer item.date, fallback to description if it's a date
@@ -59,14 +59,14 @@ export default function RecentList({
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-normal text-black hover:underline text-left"
+                      className="font-normal text-gray-500 hover:text-black hover:underline text-left"
                     >
                       {item.title}
                     </a>
                   ) : (
                     <Link
                       href={item.href}
-                      className="font-normal text-black hover:underline text-left"
+                      className="font-normal text-gray-500 hover:text-black hover:underline text-left"
                     >
                       {item.title}
                     </Link>
@@ -90,7 +90,7 @@ export default function RecentList({
       {archiveHref && archiveLabel && (
         <Link
           href={archiveHref}
-          className="text-sm text-blue-600 underline hover:text-blue-800"
+          className="text-sm text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
         >
           {archiveLabel}
         </Link>

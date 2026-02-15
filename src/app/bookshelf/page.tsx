@@ -64,7 +64,7 @@ export default function Bookshelf() {
   };
 
   return (
-    <div className="flex flex-col py-10 px-4 bg-white text-gray-900 text-sm max-w-xl mx-auto">
+    <div className="flex flex-col py-10 px-4 bg-white  text-sm max-w-xl mx-auto">
       <div className="max-w-xl w-full">
         <h1 className="text-2xl font-semibold mb-6">Bookshelf</h1>
 

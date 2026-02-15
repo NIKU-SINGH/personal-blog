@@ -67,7 +67,7 @@ export default function Projects() {
                             href={project.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 no-underline hover:underline transition-all"
+                            className="text-gray-500 no-underline hover:text-black hover:underline transition-all"
                           >
                             {project.title}
                           </a>
@@ -82,7 +82,7 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-600 hover:text-gray-900 transition-colors"
+                          className="text-gray-500 hover:text-black transition-colors"
                           title="View on GitHub"
                         >
                           <svg
@@ -99,7 +99,7 @@ export default function Projects() {
                           href={project.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 hover:text-blue-700 transition-colors"
+                          className="text-gray-500 hover:text-black transition-colors"
                           title="Live Demo"
                         >
                           <svg
