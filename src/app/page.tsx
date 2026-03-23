@@ -101,6 +101,8 @@ const homeData = {
   },
 };
 
+import HandDrawnCircle from "../components/HandDrawnCircle";
+
 export default async function Home() {
   // Fetch all blogs and sort by date descending
   const blogs = await getAllBlogs();
@@ -232,20 +234,27 @@ export default async function Home() {
           >
             Paper Shelf
           </Link>
-          ,{" "}
-          <Link
-            href="/now"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Now
-          </Link>
-          ,{" "}
-          <Link
-            href="/week-notes"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Week Notes
-          </Link>
+        </p>
+        <p className="mt-8 text-gray-500">
+          For updates on what I&apos;m doing{" "}
+          <HandDrawnCircle>
+            <Link
+              href="/now"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+            >
+              now
+            </Link>
+          </HandDrawnCircle>{" "}
+          and I post{" "}
+          <HandDrawnCircle>
+            <Link
+              href="/week-notes"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+            >
+              weekly notes
+            </Link>
+          </HandDrawnCircle>{" "}
+          about my journey.
         </p>
       </div>
 
