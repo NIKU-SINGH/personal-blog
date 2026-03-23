@@ -29,7 +29,7 @@ Around **June 2025**, while walking normally at home, I accidentally stepped on 
 
 I tore my meniscus. I couldn’t straighten my leg. Within seconds, sweat covered my face, and the pain was clearly visible.
 
-### **MRI & Diagnosis**
+### MRI & Diagnosis
 
 The next day, I went in for an MRI and returned home. All that time, I kept praying it wouldn’t be anything serious, that the doctor would tell me it was just a minor swelling, the reason I couldn’t straighten my leg.
 
