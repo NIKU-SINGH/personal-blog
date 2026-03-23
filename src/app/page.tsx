@@ -232,6 +232,20 @@ export default async function Home() {
           >
             Paper Shelf
           </Link>
+          ,{" "}
+          <Link
+            href="/now"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+          >
+            Now
+          </Link>
+          ,{" "}
+          <Link
+            href="/week-notes"
+            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+          >
+            Week Notes
+          </Link>
         </p>
       </div>
 
