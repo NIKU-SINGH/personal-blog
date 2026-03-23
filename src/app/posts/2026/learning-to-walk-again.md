@@ -28,3 +28,19 @@ But in the months that followed, my knee would occasionally slip while running. 
 Around **June 2025**, while walking normally at home, I accidentally stepped on an umbrella lying on the ground. Instinctively, I jumped to regain balance, but this time, my knee gave way.
 
 I tore my meniscus. I couldn’t straighten my leg. Within seconds, sweat covered my face, and the pain was clearly visible.
+
+### **MRI & Diagnosis**
+
+The next day, I went in for an MRI and returned home. All that time, I kept praying it wouldn’t be anything serious, that the doctor would tell me it was just a minor swelling, the reason I couldn’t straighten my leg.
+
+The following week, my father went to the hospital to collect the MRI report. When I saw it, I tried reading a few of the terms, but I couldn’t understand what they meant. Hoping for clarity, I uploaded the report to ChatGPT.
+
+What I read shocked me. The injury was serious, and surgery seemed to be the only option. I couldn’t believe it.
+
+Still hoping for reassurance, I called a close friend of mine who is a doctor. I wanted him to tell me that it was nothing serious, that surgery wouldn’t be needed.
+
+But as soon as he saw the report, he called me back immediately. I closed my room door and listened in silence. My heart was racing, and sweat covered my face. I kept hoping he would say something different something comforting.
+
+He didn’t. He told me it was a serious condition.
+
+Then, trying to calm me down, he asked me not to worry. He said he knew a few very good doctors and that even one of his close friends had undergone the same surgery and had fully recovered.

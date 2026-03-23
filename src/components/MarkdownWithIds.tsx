@@ -1,4 +1,24 @@
 import ReactMarkdown from "react-markdown";
+import React from "react";
+
+function getText(node: React.ReactNode): string {
+  if (typeof node === "string") return node;
+  if (typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(getText).join("");
+  if (React.isValidElement(node) && (node.props as any).children) {
+    return getText((node.props as any).children);
+  }
+  return "";
+}
+
+function generateId(children: React.ReactNode): string {
+  return getText(children)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 interface MarkdownWithIdsProps {
   children: string;
@@ -7,12 +27,7 @@ interface MarkdownWithIdsProps {
 export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
   const components = {
     h1: ({ children, ...props }: React.ComponentPropsWithoutRef<"h1">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h1 id={id} {...props}>
           {children}
@@ -20,12 +35,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       );
     },
     h2: ({ children, ...props }: React.ComponentPropsWithoutRef<"h2">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h2 id={id} {...props}>
           {children}
@@ -33,12 +43,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       );
     },
     h3: ({ children, ...props }: React.ComponentPropsWithoutRef<"h3">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h3 id={id} {...props}>
           {children}
@@ -46,12 +51,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       );
     },
     h4: ({ children, ...props }: React.ComponentPropsWithoutRef<"h4">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h4 id={id} {...props}>
           {children}
@@ -59,12 +59,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       );
     },
     h5: ({ children, ...props }: React.ComponentPropsWithoutRef<"h5">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h5 id={id} {...props}>
           {children}
@@ -72,12 +67,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       );
     },
     h6: ({ children, ...props }: React.ComponentPropsWithoutRef<"h6">) => {
-      const id = (children as string)
-        ?.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = generateId(children);
       return (
         <h6 id={id} {...props}>
           {children}
@@ -88,15 +78,10 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       children,
       ...props
     }: React.ComponentPropsWithoutRef<"strong">) => {
-      const text = children as string;
+      const text = getText(children);
       // Only add ID if the text is longer than 3 characters (likely a heading)
       if (text && text.length > 3) {
-        const id = text
-          .toLowerCase()
-          .replace(/[^a-z0-9\s-]/g, "")
-          .replace(/\s+/g, "-")
-          .replace(/-+/g, "-")
-          .replace(/^-|-$/g, "");
+        const id = generateId(children);
         return (
           <strong id={id} {...props}>
             {children}
