@@ -44,3 +44,11 @@ But as soon as he saw the report, he called me back immediately. I closed my roo
 He didn’t. He told me it was a serious condition.
 
 Then, trying to calm me down, he asked me not to worry. He said he knew a few very good doctors and that even one of his close friends had undergone the same surgery and had fully recovered.
+
+### **Family & Indian Parent Fear**
+
+My next big fear was how I would tell my parents. My mother, like most Indian mothers, is very cautious and worries deeply. I knew the news would upset her.
+
+So I decided to first tell my siblings. They understood the situation and helped convey it to my parents in a calmer way.
+
+Once it was clear that surgery was inevitable, my father and siblings began reaching out to people, gathering information, and finding the best doctor available.
