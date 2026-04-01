@@ -52,3 +52,15 @@ My next big fear was how I would tell my parents. My mother, like most Indian mo
 So I decided to first tell my siblings. They understood the situation and helped convey it to my parents in a calmer way.
 
 Once it was clear that surgery was inevitable, my father and siblings began reaching out to people, gathering information, and finding the best doctor available.
+
+### **Doctor Shopping & Trust**
+
+I consulted around 4 doctors before finally choosing one. The medical waitlists in India are long, and it took me nearly 3 weeks just to consult the right specialists.
+
+A few of the doctors said they could repair my ACL, but told me the meniscus was beyond repair and would have to be completely removed. They warned that this would give me only 10–12 years before arthritis set in, after which I might need a complete knee replacement.
+
+Meniscus repair is an advanced procedure, and I was disappointed to realise that some doctors did not fully explain all the available options to patients.
+
+I continued consulting more doctors and eventually learned that in Goa, only two surgeons were capable of performing a meniscus repair. I met one of them, and after reviewing my case, he advised that the surgery should be done as soon as possible, as it had become a medical emergency.
+
+Within a week, the surgery date was finalised, and my family agreed to move forward.
