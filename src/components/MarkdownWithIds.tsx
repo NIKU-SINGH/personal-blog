@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import React from "react";
+import rehypeRaw from "rehype-raw";
 
 function getText(node: React.ReactNode): string {
   if (typeof node === "string") return node;
@@ -160,7 +161,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
     <ReactMarkdown
       components={components}
       remarkPlugins={[]}
-      rehypePlugins={[]}
+      rehypePlugins={[rehypeRaw]}
     >
       {children}
     </ReactMarkdown>
