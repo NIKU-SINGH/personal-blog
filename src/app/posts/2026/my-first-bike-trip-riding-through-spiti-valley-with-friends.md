@@ -13,6 +13,11 @@ Back then, it felt like a distant dream. I never imagined that one day I would e
 
 The ride through Spiti was beautiful, but it was far from easy. There were moments of breathlessness, freezing weather, difficult roads, and even a few occasions when we nearly fell off the bike. It was challenging, exhausting, and unforgettable—and it became the first bike trip of my life.
 
+<div class="photo-grid photo-grid--2">
+  <img class="photo-contain" src="/images/spiti/bike_1.jpg" alt="Riding through the mountain roads of Spiti" />
+  <img class="photo-contain" src="/images/spiti/map.jpg" alt="Map of the Spiti, Kinnaur, and Tirthan Valley route" />
+</div>
+
 ### Starting the Journey with Friends
 
 Six months before this trip, I was on bed rest recovering from ACL surgery. I didn’t even know how to ride a bike. Just three months before we left, a friend taught me the basics on his Splendor. I never imagined that soon afterward, I would ride a 411cc Royal Enfield Himalayan through the mountains.
@@ -20,6 +25,8 @@ Six months before this trip, I was on bed rest recovering from ACL surgery. I di
 I still have a long way to go before I become a confident rider. For most of the trip, I travelled as a pillion admiring the views, capturing moments, and occasionally riding when the roads were easier.
 
 Travelling with friends feels very different from travelling alone. Both have their own joys, but with friends, even the stupidest moments become lasting memories. Far away from crowds, work, and the constant noise of news and notifications, we lived inside our own little bubble laughing, exploring, and simply enjoying the moment.
+
+<img class="photo-contain" src="/images/spiti/friends.jpg" alt="School friends together during the Spiti bike trip" />
 
 ### A Landscape That Never Stayed the Same
 
@@ -29,17 +36,43 @@ Spiti’s landscape changed dramatically as we travelled from one region to anot
 
 Jibhi welcomed us with lush greenery, peaceful roads, and clear blue skies. It was a gentle beginning before the landscape became increasingly rugged.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/spiti/jibhi_1.jpg" alt="A quiet road through the greenery of Jibhi" />
+  <img src="/images/spiti/jibhi_2.jpg" alt="A forest road beneath the clear skies of Jibhi" />
+</div>
+
 #### 2. Sangla and Chitkul
 
 This was among the most beautiful parts of the journey. Green mountains and snow-capped peaks surrounded a river flowing through the valley, with small settlements resting between them.
+
+<div class="photo-grid photo-grid--2">
+  <img src="/images/spiti/chitkul_1.jpg" alt="Green mountains and snow-covered peaks near Chitkul" />
+  <img src="/images/spiti/chitkul_3.jpg" alt="Standing among the rocks and trees near Chitkul" />
+</div>
 
 #### 3. Nako
 
 The landscape gradually became dry and barren as we approached Nako. The well-built concrete road and uninterrupted mountain views made this stretch especially enjoyable.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/spiti/nako_1.jpg" alt="Nako village surrounded by dry mountains" />
+  <img src="/images/spiti/nako_3.jpg" alt="A quiet mountain view near Nako" />
+</div>
+
 #### 4. Kaza
 
 Kaza’s enormous barren mountains made us realise how small we were. Key Monastery looked extraordinary against the rugged landscape, although the extreme cold and strong winds made staying outside difficult.
+
+<div class="photo-grid photo-grid--3">
+  <img src="/images/spiti/kaza_1.jpg" alt="Key Monastery against the mountains of Kaza" />
+  <img src="/images/spiti/kaza_2.jpg" alt="The vast barren landscape around Kaza" />
+  <img src="/images/spiti/kaza_3.jpg" alt="Rocky mountain terrain near Kaza" />
+  <img src="/images/spiti/kaza_4.jpg" alt="The highest post office at Hikkim near Kaza" />
+  <img src="/images/spiti/kaza_5.jpg" alt="A Buddhist stupa beneath the blue Spiti sky" />
+  <img src="/images/spiti/kaza_6.jpg" alt="Sunset over the river valley near Kaza" />
+</div>
+
+![Inside a monastery in Spiti Valley](/images/spiti/monestary_2.jpg)
 
 Spiti’s landscape was once part of the ancient Tethys Sea. Marine fossils found across the valley still reveal its underwater past. You can read more about [Spiti’s geology on Wikipedia](https://en.wikipedia.org/wiki/Spiti#Geology).
 
@@ -47,9 +80,16 @@ Spiti’s landscape was once part of the ancient Tethys Sea. Marine fossils foun
 
 Chandratal revealed the wildest and most isolated side of Spiti. The journey involved rough off-road terrain, water crossings, freezing winds, and difficult riding conditions. It was exhausting, but the untouched wilderness made it unforgettable.
 
+![A small flower held against Chandratal Lake](/images/spiti/chandratal_3.jpg)
+
 ### The Most Difficult Part: The Road to Chandratal and Back to Manali
 
 The road to Chandratal was completely off-road and easily the most difficult part of our journey. Riding continuously over rough terrain made our knees and legs ache. The freezing weather, limited water, and high altitude made it even more exhausting.
+
+<div class="photo-grid photo-grid--2">
+  <img src="/images/spiti/chandratal.jpg" alt="The rough mountain road towards Chandratal" />
+  <img src="/images/spiti/chandratal_2.jpg" alt="Rocky off-road terrain on the Chandratal journey" />
+</div>
 
 Chandratal is a high-altitude lake in the upper Chandra Valley of Himachal Pradesh’s Lahaul and Spiti district. Its appearance in the movie *Lootera* may be one reason it has become so popular. The area was extremely crowded, with SUVs and tempo travellers blocking the narrow roads and causing long traffic jams.
 
@@ -65,11 +105,15 @@ People often say that travelling gives you clarity and helps you find answers. S
 
 So I stopped forcing myself to think. I sat there without chasing a conclusion, took a few photographs and videos, and admired the mesmerising view. Perhaps clarity does not always mean knowing what to do next. Sometimes, it is simply the ability to be present without needing an answer.
 
+![Sitting quietly with the mountains at Nako](/images/spiti/self_1.jpg)
+
 ### Stargazing
 
 At Jibhi, I saw the Milky Way with my naked eyes for the first time. Having watched documentaries about space and the cosmos since childhood, the experience filled me with childlike joy.
 
 Something I had only ever seen on television was suddenly right above me in the night sky. For a few moments, I simply stood there in awe, trying to take it all in. It felt surreal to finally witness in real life something that had fascinated me since childhood.
+
+![The Milky Way visible above Jibhi](/images/spiti/stargazing_1.jpg)
 
 ### The Part I Didn’t Like
 At almost every location, taking photographs seemed to become more important than pausing to experience the place itself. We rarely put our phones away, sat quietly, and allowed ourselves to absorb what was in front of us.
@@ -90,3 +134,5 @@ At the same time, it was disappointing to see how carelessly we sometimes treat 
 Travelling with friends made the experience even more memorable. We argued, played pranks on one another, laughed at stupid things, and occasionally got on each other’s nerves. Yet, through every difficult road and exhausting day, we stayed together.
 
 I returned with a greater appreciation for India’s natural beauty, the friendships that survive both laughter and disagreements.
+
+![Snow-covered Himalayan peaks from the Spiti journey](/images/spiti/chitkul.jpg)
