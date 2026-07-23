@@ -1,6 +1,30 @@
 import ReactMarkdown from "react-markdown";
 import React from "react";
 import rehypeRaw from "rehype-raw";
+import Image from "next/image";
+import fs from "fs";
+import path from "path";
+import { imageSize } from "image-size";
+
+const imageDimensionsCache = new Map<string, { width: number; height: number }>();
+
+function getLocalImageDimensions(
+  src: string,
+): { width: number; height: number } | null {
+  if (!src.startsWith("/")) return null;
+  if (imageDimensionsCache.has(src)) return imageDimensionsCache.get(src)!;
+
+  try {
+    const filePath = path.join(process.cwd(), "public", src);
+    const buffer = fs.readFileSync(filePath);
+    const { width, height } = imageSize(buffer);
+    const dimensions = { width, height };
+    imageDimensionsCache.set(src, dimensions);
+    return dimensions;
+  } catch {
+    return null;
+  }
+}
 
 function getText(node: React.ReactNode): string {
   if (typeof node === "string") return node;
@@ -153,6 +177,30 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
         <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
           {children}
         </a>
+      );
+    },
+    img: ({
+      src,
+      alt,
+      className,
+    }: React.ComponentPropsWithoutRef<"img">) => {
+      if (!src || typeof src !== "string") return null;
+
+      const dimensions = getLocalImageDimensions(src);
+      if (!dimensions) {
+        // eslint-disable-next-line @next/next/no-img-element
+        return <img src={src} alt={alt ?? ""} className={className} />;
+      }
+
+      return (
+        <Image
+          src={src}
+          alt={alt ?? ""}
+          width={dimensions.width}
+          height={dimensions.height}
+          className={className}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px"
+        />
       );
     },
   };
