@@ -113,13 +113,17 @@ export default async function Home() {
     <div className="flex flex-col py-10 px-4 bg-white text-sm max-w-xl mx-auto">
       <div className="max-w-xl w-full">
         {/* Profile Section Added/Modified */}
-        <div className="flex flex-col items-center gap-6 mb-12">
+        <div
+          className="stagger-in flex flex-col items-center gap-6 mb-12"
+          style={{ animationDelay: "0ms" }}
+        >
           {/* Rectangular Image with Fade and Larger Size */}
           <div className="relative w-64 h-64 overflow-hidden">
             <Image
               src="/images/Portfolio.png"
               alt="Niku Singh"
               fill
+              sizes="256px"
               className="object-cover scale-125 object-top"
               priority
             />
@@ -139,144 +143,152 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        {homeData.intro.map((item, idx) => {
-          if (typeof item === "string") {
-            return (
-              <p className="mb-4" key={idx}>
-                {item}
-              </p>
-            );
-          } else {
-            return (
-              <p className="mb-4" key={idx}>
-                {item.text}
-                {item.links &&
-                  item.links.map((link, i) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      target="_blank"
-                      className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                {item.after}
-                {item.moreLinks &&
-                  item.moreLinks.map((link) => (
-                    <span key={link.href}>
-                      {item.moreLinks.indexOf(link) > 0 && ", "}
+        <div className="stagger-in" style={{ animationDelay: "200ms" }}>
+          {homeData.intro.map((item, idx) => {
+            if (typeof item === "string") {
+              return (
+                <p className="mb-4" key={idx}>
+                  {item}
+                </p>
+              );
+            } else {
+              return (
+                <p className="mb-4" key={idx}>
+                  {item.text}
+                  {item.links &&
+                    item.links.map((link, i) => (
                       <Link
+                        key={link.href}
                         href={link.href}
                         target="_blank"
                         className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
                       >
                         {link.label}
                       </Link>
-                    </span>
-                  ))}
-                {item.afterMore}
-              </p>
-            );
-          }
-        })}
-        <p className="mt-6">
-          You can find me on{" "}
-          <Link
-            href={homeData.contact.twitter.href}
-            target="_blank"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            {homeData.contact.twitter.label}
-          </Link>{" "}
-          or reach out via{" "}
-          <a
-            href={homeData.contact.email.href}
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            {homeData.contact.email.label}
-          </a>
-          .
-        </p>
-        <p className="mt-4">
-          Read more about me:{" "}
-          <Link
-            href="/about"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            About
-          </Link>
-          ,{" "}
-          <Link
-            href="/projects"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Projects
-          </Link>
-          ,{" "}
-          <Link
-            href="/work-experience"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Work Experience
-          </Link>
-          ,{" "}
-          <Link
-            href="/bookshelf"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Book Shelf
-          </Link>
-          ,{" "}
-          <Link
-            href="/papershelf"
-            className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
-          >
-            Paper Shelf
-          </Link>
-        </p>
-        <p className="mt-8 text-gray-500">
-          For updates on what I&apos;m doing{" "}
-          <HandDrawnCircle>
+                    ))}
+                  {item.after}
+                  {item.moreLinks &&
+                    item.moreLinks.map((link) => (
+                      <span key={link.href}>
+                        {item.moreLinks.indexOf(link) > 0 && ", "}
+                        <Link
+                          href={link.href}
+                          target="_blank"
+                          className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+                        >
+                          {link.label}
+                        </Link>
+                      </span>
+                    ))}
+                  {item.afterMore}
+                </p>
+              );
+            }
+          })}
+        </div>
+        <div className="stagger-in" style={{ animationDelay: "400ms" }}>
+          <p className="mt-6">
+            You can find me on{" "}
             <Link
-              href="/now"
-              className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+              href={homeData.contact.twitter.href}
+              target="_blank"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
             >
-              now
-            </Link>
-          </HandDrawnCircle>{" "}
-          and I post{" "}
-          <HandDrawnCircle>
+              {homeData.contact.twitter.label}
+            </Link>{" "}
+            or reach out via{" "}
+            <a
+              href={homeData.contact.email.href}
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+            >
+              {homeData.contact.email.label}
+            </a>
+            .
+          </p>
+          <p className="mt-4">
+            Read more about me:{" "}
             <Link
-              href="/week-notes"
-              className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+              href="/about"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
             >
-              weekly notes
+              About
             </Link>
-          </HandDrawnCircle>{" "}
-          about my journey.
-        </p>
+            ,{" "}
+            <Link
+              href="/projects"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+            >
+              Projects
+            </Link>
+            ,{" "}
+            <Link
+              href="/work-experience"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+            >
+              Work Experience
+            </Link>
+            ,{" "}
+            <Link
+              href="/bookshelf"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+            >
+              Book Shelf
+            </Link>
+            ,{" "}
+            <Link
+              href="/papershelf"
+              className="text-gray-500 underline underline-offset-4 decoration-gray-400 hover:decoration-black hover:text-black"
+            >
+              Paper Shelf
+            </Link>
+          </p>
+          <p className="mt-8 text-gray-500">
+            For updates on what I&apos;m doing{" "}
+            <HandDrawnCircle>
+              <Link
+                href="/now"
+                className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+              >
+                now
+              </Link>
+            </HandDrawnCircle>{" "}
+            and I post{" "}
+            <HandDrawnCircle>
+              <Link
+                href="/week-notes"
+                className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
+              >
+                weekly notes
+              </Link>
+            </HandDrawnCircle>{" "}
+            about my journey.
+          </p>
+        </div>
       </div>
 
       {/* Recent Blog Section */}
-      <RecentList
-        title={homeData.recentBlog.title}
-        items={recentBlogs.map((blog) => ({
-          title: blog.title,
-          href: `/posts/${blog.year}/${blog.slug}`,
-          description: blog.date,
-        }))}
-        archiveHref="/blogs"
-        archiveLabel={homeData.recentBlog.archiveLabel}
-      />
+      <div className="stagger-in" style={{ animationDelay: "600ms" }}>
+        <RecentList
+          title={homeData.recentBlog.title}
+          items={recentBlogs.map((blog) => ({
+            title: blog.title,
+            href: `/posts/${blog.year}/${blog.slug}`,
+            description: blog.date,
+          }))}
+          archiveHref="/blogs"
+          archiveLabel={homeData.recentBlog.archiveLabel}
+        />
+      </div>
 
       {/* Recent Projects Section */}
-      <RecentList
-        title={homeData.recentProjects.title}
-        items={homeData.recentProjects.items}
-        archiveHref={homeData.recentProjects.archiveHref}
-        archiveLabel={homeData.recentProjects.archiveLabel}
-      />
+      <div className="stagger-in" style={{ animationDelay: "800ms" }}>
+        <RecentList
+          title={homeData.recentProjects.title}
+          items={homeData.recentProjects.items}
+          archiveHref={homeData.recentProjects.archiveHref}
+          archiveLabel={homeData.recentProjects.archiveLabel}
+        />
+      </div>
     </div>
   );
 }

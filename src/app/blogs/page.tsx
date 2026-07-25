@@ -53,61 +53,25 @@ export default async function BlogsPage() {
                     display: "flex",
                     alignItems: "center",
                     gap: "1rem",
-                    justifyContent: "space-between",
                   }}
                 >
                   <div
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "1rem",
-                      flex: 1,
+                      color: "#888",
+                      fontSize: "0.9em",
+                      minWidth: "fit-content",
                     }}
                   >
-                    <div
-                      style={{
-                        color: "#888",
-                        fontSize: "0.9em",
-                        minWidth: "fit-content",
-                      }}
-                    >
-                      {blog.date}
-                    </div>
-                    <h3 style={{ margin: 0 }}>
-                      <Link
-                        href={`/posts/${blog.year}/${blog.slug}`}
-                        className="text-gray-500 hover:text-black hover:underline"
-                      >
-                        {blog.title}
-                      </Link>
-                    </h3>
+                    {blog.date}
                   </div>
-                  {blog.tags && blog.tags.length > 0 && (
-                    <div
-                      style={{
-                        display: "flex",
-                        gap: "0.5rem",
-                        flexWrap: "wrap",
-                        justifyContent: "flex-end",
-                      }}
+                  <h3 style={{ margin: 0 }}>
+                    <Link
+                      href={`/posts/${blog.year}/${blog.slug}`}
+                      className="text-gray-500 hover:text-black hover:underline"
                     >
-                      {blog.tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          style={{
-                            backgroundColor: "#f3f4f6",
-                            color: "#374151",
-                            padding: "0.25rem 0.5rem",
-                            borderRadius: "0.25rem",
-                            fontSize: "0.75rem",
-                            fontWeight: "500",
-                          }}
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
+                      {blog.title}
+                    </Link>
+                  </h3>
                 </div>
               </li>
             ))}
