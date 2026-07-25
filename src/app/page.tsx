@@ -1,5 +1,5 @@
 import Link from "next/link";
-import RecentList from "../components/RecentList";
+import YearGroupedList from "../components/YearGroupedList";
 import { getAllBlogs } from "../utils/readBlogs";
 import Image from "next/image";
 import Clock from "../components/Clock";
@@ -49,7 +49,7 @@ const homeData = {
     },
   },
   recentBlog: {
-    title: "Recent Blog",
+    title: "Writing",
     items: [
       {
         title: "Making Sense of React Server Components",
@@ -78,25 +78,28 @@ const homeData = {
       },
     ],
     archiveHref: "#",
-    archiveLabel: "Read more / Archive →",
+    archiveLabel: "Read more →",
   },
   recentProjects: {
-    title: "Recent Projects",
+    title: "Projects",
     items: [
       {
         title: "Recollect AI",
         href: "https://recollect-ai.vercel.app",
-        description: "July 2025",
+        date: "July 2025",
+        year: "2025",
         external: true,
+        isNew: true,
       },
       {
         title: "IngestFlow",
         href: "https://github.com/NIKU-SINGH/IngestFlow",
-        description: "June 2025",
+        date: "June 2025",
+        year: "2025",
         external: true,
       },
     ],
-    archiveHref: "#",
+    archiveHref: "/projects",
     archiveLabel: "View more →",
   },
 };
@@ -123,7 +126,8 @@ export default async function Home() {
               src="/images/Portfolio.png"
               alt="Niku Singh"
               fill
-              sizes="256px"
+              sizes="320px"
+              quality={95}
               className="object-cover scale-125 object-top"
               priority
             />
@@ -138,7 +142,8 @@ export default async function Home() {
               <span>/ni:ku: sɪŋ/ • noun</span>
               <span>•</span>
               <Clock />
-              {/* <span>•</span> */}
+              <span>•</span>
+              <span>South Goa, Goa</span>
               {/* <span>LOFI <span className="text-[10px]">🎵</span></span> */}
             </div>
           </div>
@@ -244,7 +249,7 @@ export default async function Home() {
           </p>
           <p className="mt-8 text-gray-500">
             For updates on what I&apos;m doing{" "}
-            <HandDrawnCircle>
+            <HandDrawnCircle color="#ec4899">
               <Link
                 href="/now"
                 className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
@@ -253,7 +258,7 @@ export default async function Home() {
               </Link>
             </HandDrawnCircle>{" "}
             and I post{" "}
-            <HandDrawnCircle>
+            <HandDrawnCircle color="#ec4899">
               <Link
                 href="/week-notes"
                 className="text-gray-500 underline underline-offset-4 decoration-gray-200 hover:decoration-black hover:text-black transition-colors"
@@ -266,24 +271,26 @@ export default async function Home() {
         </div>
       </div>
 
-      {/* Recent Blog Section */}
-      <div className="stagger-in" style={{ animationDelay: "600ms" }}>
-        <RecentList
-          title={homeData.recentBlog.title}
-          items={recentBlogs.map((blog) => ({
+      {/* Blog Section */}
+      <div className="stagger-in mt-12" style={{ animationDelay: "600ms" }}>
+        <YearGroupedList
+          heading={homeData.recentBlog.title}
+          items={recentBlogs.map((blog, idx) => ({
             title: blog.title,
             href: `/posts/${blog.year}/${blog.slug}`,
-            description: blog.date,
+            date: blog.date,
+            year: blog.year,
+            isNew: idx === 0,
           }))}
           archiveHref="/blogs"
           archiveLabel={homeData.recentBlog.archiveLabel}
         />
       </div>
 
-      {/* Recent Projects Section */}
-      <div className="stagger-in" style={{ animationDelay: "800ms" }}>
-        <RecentList
-          title={homeData.recentProjects.title}
+      {/* Projects Section */}
+      <div className="stagger-in mt-12" style={{ animationDelay: "800ms" }}>
+        <YearGroupedList
+          heading={homeData.recentProjects.title}
           items={homeData.recentProjects.items}
           archiveHref={homeData.recentProjects.archiveHref}
           archiveLabel={homeData.recentProjects.archiveLabel}
