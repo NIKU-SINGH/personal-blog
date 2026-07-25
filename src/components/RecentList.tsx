@@ -49,7 +49,7 @@ export default function RecentList({
           const showNewTag = item.external && title !== "Recent Projects";
           return (
             <li key={idx}>
-              <div className="flex items-center py-2 border-b last:border-b-0">
+              <div className="flex items-center py-1 border-b last:border-b-0">
                 <span className="w-36 text-gray-400 text-sm text-left">
                   {formattedDate}
                 </span>
