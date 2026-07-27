@@ -75,7 +75,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
           <li key={heading.id}>
             <button
               onClick={() => scrollToHeading(heading.id)}
-              className={`text-left w-full text-sm transition-all duration-200 hover: relative ${activeId === heading.id
+              className={`cursor-pointer text-left w-full text-sm transition-all duration-200 hover: relative ${activeId === heading.id
                   ? " font-medium bg-gray-50 border-l-2 border-gray-400 pl-3"
                   : "text-gray-600 hover:bg-gray-50 pl-3"
                 }`}

@@ -120,8 +120,6 @@ I think the biggest takeaway from this trip was realizing that I have free will.
 
 ## People I Met Along the Way
 
-## People I Met Along the Way
-
 One of the best parts of this trip was the people I met.
 
 I met travelers from Australia, Germany, Sweden, the Netherlands, South Korea, and many other countries. Most of them were young Europeans who had just finished high school and were taking a gap year to travel the world.
@@ -188,3 +186,5 @@ I'll end this blog with one of my favorite quotes by Anthony Bourdain:
 > *"If I'm an advocate for anything, it's to move. As far as you can, as much as you can. Across the ocean, or simply across the river. The extent to which you can walk in someone else's shoes or at least eat their food, it's a plus for everybody.*
 >
 > *Open your mind, get up off the couch, move."*
+
+![Anthony Bourdain](/images/a-gift-to-myself/anthony_bourdain.jpg)
