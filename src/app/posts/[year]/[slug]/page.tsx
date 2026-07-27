@@ -11,6 +11,25 @@ interface BlogPageProps {
   params: Promise<{ year: string; slug: string }>;
 }
 
+export async function generateStaticParams() {
+  const postsRoot = path.join(process.cwd(), "src/app/posts");
+  const params: { year: string; slug: string }[] = [];
+
+  const entries = await fs.readdir(postsRoot, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const year = entry.name;
+    const files = await fs.readdir(path.join(postsRoot, year));
+    for (const file of files) {
+      if (file.endsWith(".md")) {
+        params.push({ year, slug: file.replace(/\.md$/, "") });
+      }
+    }
+  }
+
+  return params;
+}
+
 export default async function BlogPage({
   params,
 }: BlogPageProps): Promise<React.JSX.Element> {
