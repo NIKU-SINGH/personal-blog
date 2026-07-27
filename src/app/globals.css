@@ -96,6 +96,33 @@ body {
   padding-left: 1.625em;
 }
 
+/* Tighter section spacing for the Now page's compact text-sm layout */
+.prose-now h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+.prose-now h3 {
+  margin-top: 1.25em;
+  margin-bottom: 0.4em;
+}
+
+.prose-now p {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+.prose-now ul,
+.prose-now ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose-now li {
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
 .prose ol {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
