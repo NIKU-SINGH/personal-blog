@@ -13,7 +13,7 @@ Reaching 25 felt like a milestone I wanted to celebrate in a way that I would re
 Ever since my ACL surgery last year, I had been planning to do something meaningful for this birthday.
 That's when I decided to take my first international solo trip.
 
-## Why I Decided to Travel Alone
+### Why I Decided to Travel Alone
 
 There were several reasons why I chose to travel alone:
 
@@ -26,8 +26,10 @@ There were several reasons why I chose to travel alone:
 4. Learning to stand on my own. Being the youngest in the family, I've rarely had the chance to make big decisions independently. This solo trip was my way of proving to myself that I could take care of myself, make my own decisions, and be responsible.
 5. Freedom. More than anything, I wanted to experience the freedom that comes with travelling alone.
 
+![Just me, figuring things out](/images/a-gift-to-myself/self.jpg)
 
-## Planning the Trip (or Not Planning At All)
+
+### Planning the Trip (or Not Planning At All)
 
 I literally had one plan—to have no plan at all.
 
@@ -44,8 +46,15 @@ Almost everything happened spontaneously. I partied at different clubs, went to 
 
 If there's one thing I'd recommend to anyone planning a trip like this, it's this: have one plan—to have no plan at all.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/a-gift-to-myself/ulluwatu_1.jpg" alt="The cliffs of Uluwatu" />
+  <img src="/images/a-gift-to-myself/ulluwatu_2.jpg" alt="Uluwatu Temple and coastline" />
+  <img src="/images/a-gift-to-myself/ulluwatu_3.jpg" alt="Exploring Uluwatu" />
+  <img src="/images/a-gift-to-myself/indo_food_1.jpg" alt="Trying local Indonesian food" />
+</div>
 
-## The First Day: Excited, Terrified, and Everything In Between
+
+### The First Day: Excited, Terrified, and Everything In Between
 
 At the beginning, I was genuinely scared. Fourteen days in a new country, completely alone, with no real plan—what was I going to do?
 
@@ -57,8 +66,15 @@ I also have a history of getting scammed whenever I visit a new place. I kept th
 
 With all these fears running through my mind, I decided to take a leap of faith and go anyway.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/a-gift-to-myself/canggu_1.jpg" alt="Canggu on the first day" />
+  <img src="/images/a-gift-to-myself/canggu_2.jpg" alt="Exploring Canggu" />
+  <img src="/images/a-gift-to-myself/oldmans_club.jpg" alt="Old Man's Club, Canggu" />
+  <img src="/images/a-gift-to-myself/workation.jpg" alt="Working from a cafe in Canggu" />
+</div>
 
-## What Solo Travel Actually Feels Like
+
+### What Solo Travel Actually Feels Like
 
 Solo travel is a mix of so many emotions. You get to know yourself better, but you also get to meet people who, for a brief moment, feel like long-lost friends. You spend a few hours or days together, create memories, and then move on.
 
@@ -99,6 +115,13 @@ Coming from India, this was a huge contrast for me. I realized how much of our l
 
 Indonesia surprised me as well. Even though it's not considered a richer country than India, I found many places to be clean, well-maintained, and welcoming. The people were friendly, and there was a sense of calm that I hadn't expected.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/a-gift-to-myself/indo_food_3.jpg" alt="More Indonesian flavors" />
+  <img src="/images/a-gift-to-myself/indo_food_4.jpg" alt="A street food find" />
+  <img src="/images/a-gift-to-myself/noodles.jpg" alt="Noodles, a trip staple" />
+  <img src="/images/a-gift-to-myself/coffee_tasting.jpg" alt="Coffee tasting in Bali" />
+</div>
+
 This trip also made me reflect on life back home. We pay high taxes, yet many of us still deal with overcrowded cities, poor infrastructure, safety concerns, and constant social judgment. That contrast made me realize that, in the long run, I want to build a life outside India.
 
 The biggest lesson I took away wasn't that one country is better than another. It was realizing what freedom can look like. I met people who weren't trying to impress anyone, compete with everyone around them, or live according to someone else's timeline. They were simply choosing the life they wanted—and that, to me, felt like real freedom.
@@ -118,9 +141,11 @@ I had planned to stay in Canggu for three days, but I ended up staying for five.
 
 I think the biggest takeaway from this trip was realizing that I have free will. I don't have to live life according to a fixed plan or someone else's expectations. I can choose my own path, make my own decisions, and simply enjoy being alive.
 
-## People I Met Along the Way
+### People I Met Along the Way
 
 One of the best parts of this trip was the people I met.
+
+![Some of the people I met along the way](/images/a-gift-to-myself/people.jpg)
 
 I met travelers from Australia, Germany, Sweden, the Netherlands, South Korea, and many other countries. Most of them were young Europeans who had just finished high school and were taking a gap year to travel the world.
 
@@ -139,7 +164,7 @@ One of the most interesting people I met was a professional tennis racket string
 
 This trip made me realize that there are countless ways to make a living. People weren't defined by their job titles—they simply did what they enjoyed or what helped them continue exploring the world.
 
-## Moments That Stayed With Me
+### Moments That Stayed With Me
 
 Gili T was undoubtedly the highlight of my trip. The island is so small that you can easily cover it in about an hour, but despite its size, it has everything—party vibes, family-friendly spots, adventure activities, and a very relaxed atmosphere.
 
@@ -149,11 +174,18 @@ Another thing I loved about Gili T was how lively it felt. You could stop at alm
 
 And of course, I can't forget the horse cart rides. Since there are no cars on the island, horse carts are everywhere. The sound of the horses' hooves and the jingling bells became a part of the island's identity for me. Even now, I can still hear that sound in my head.
 
+<div class="photo-grid photo-grid--2">
+  <img src="/images/a-gift-to-myself/gillit_1.jpg" alt="Gili T" />
+  <img src="/images/a-gift-to-myself/gillit_2.jpg" alt="Riding around Gili T" />
+  <img src="/images/a-gift-to-myself/gillit_3.jpg" alt="The island's nightlife" />
+  <img src="/images/a-gift-to-myself/gillit_5.jpg" alt="A quiet moment on Gili T" />
+</div>
+
 Scuba diving is another experience that will stay with me forever. I spent around 35 minutes underwater at a depth of 10–12 meters, and it felt like stepping onto a completely different planet. Watching colorful fish, turtles, and other marine life peacefully going about their day while I floated among them was surreal. It felt incredibly peaceful and healing.
 
 After the dive, I just sat at a beach shack for a while, trying to absorb everything I had just witnessed. Some experiences are difficult to put into words, and this was definitely one of them.
 
-## What I Learned About Myself (Takeaways)
+### What I Learned About Myself (Takeaways)
 
 This trip wasn't just about exploring Bali—it was also about discovering parts of myself that I hadn't paid attention to before.
 
@@ -171,13 +203,15 @@ This trip wasn't just about exploring Bali—it was also about discovering parts
 - I need to get better at talking to strangers and starting conversations.
 - I want to be more open, say yes to more experiences, and enjoy life a little more.
 
-## Would I Do It Again?
+### Would I Do It Again?
 
 Without a doubt.
 
 This single solo trip gave me so much to think about. It changed the way I look at life, what I want from it, and the kind of person I want to become. I couldn't have asked for a better way to celebrate turning 25.
 
 If there's one thing this trip taught me, it's that some experiences can't be explained—they have to be lived. The places you visit eventually become memories, but the perspective you gain stays with you long after you return home.
+
+![The trip that gave me so much](/images/a-gift-to-myself/final.jpg)
 
 I'll definitely do it again.
 
