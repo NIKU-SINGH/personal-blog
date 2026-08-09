@@ -200,6 +200,7 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
           height={dimensions.height}
           className={className}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px"
+          loading="eager"
         />
       );
     },
