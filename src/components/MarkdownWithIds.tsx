@@ -115,30 +115,6 @@ export default function MarkdownWithIds({ children }: MarkdownWithIdsProps) {
       }
       return <strong {...props}>{children}</strong>;
     },
-    ul: ({ children, ...props }: React.ComponentPropsWithoutRef<"ul">) => {
-      return (
-        <ul style={{ listStyleType: "disc", paddingLeft: "1.5rem" }} {...props}>
-          {children}
-        </ul>
-      );
-    },
-    ol: ({ children, ...props }: React.ComponentPropsWithoutRef<"ol">) => {
-      return (
-        <ol
-          style={{ listStyleType: "decimal", paddingLeft: "1.5rem" }}
-          {...props}
-        >
-          {children}
-        </ol>
-      );
-    },
-    li: ({ children, ...props }: React.ComponentPropsWithoutRef<"li">) => {
-      return (
-        <li style={{ marginBottom: "0.5rem" }} {...props}>
-          {children}
-        </li>
-      );
-    },
     a: ({ href, children, ...props }: React.ComponentPropsWithoutRef<"a">) => {
       // Check if it's a Loom video URL
       if (href && href.includes("loom.com/embed")) {
